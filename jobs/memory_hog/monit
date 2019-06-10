@@ -1,0 +1,5 @@
+check process memory_hog
+  with pidfile /var/vcap/sys/run/bpm/memory_hog/memory_hog.pid
+  start program "/var/vcap/jobs/bpm/bin/bpm start memory_hog"
+  stop program "/var/vcap/jobs/bpm/bin/bpm stop memory_hog"
+  group vcap
