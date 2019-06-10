@@ -16,7 +16,7 @@ instance_groups:
   - z2
   - z3
   instances: 3
-  vm_type: c5.large
+  vm_type: minimal
   stemcell: default
   networks:
   - name: default
