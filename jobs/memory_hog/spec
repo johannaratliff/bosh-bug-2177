@@ -2,9 +2,7 @@
 name: memory_hog
 
 templates:
-  bpm.yml.erb: config/bpm.yml
+  bpm.yml: config/bpm.yml
 
 packages:
 - memory_hog
-
-properties: {}

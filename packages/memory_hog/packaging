@@ -6,10 +6,10 @@ cp -a . ${BOSH_INSTALL_TARGET}/src
 export GOROOT=$(readlink -nf /var/vcap/packages/golang1.12.5)
 export GOPATH=$BOSH_INSTALL_TARGET
 export PATH=$GOROOT/bin:$PATH
+export GOCACHE=$PWD/cache
+export HOME=/var/vcap
 
-go build \
-  -o ${BOSH_INSTALL_TARGET}/memory_hog \
-  github.com/johannaratliff/src/memory_hog
+go build -o ${BOSH_INSTALL_TARGET}/memory_hog memory_hog/*.go
 
 # clean up source artifacts
 rm -rf ${BOSH_INSTALL_TARGET}/src ${BOSH_INSTALL_TARGET}/pkg

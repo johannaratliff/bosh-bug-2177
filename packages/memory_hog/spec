@@ -5,4 +5,4 @@ dependencies:
 - golang1.12.5
 
 files:
-- memory_hog/* # gosub
+- memory_hog/**
