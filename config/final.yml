@@ -1,1 +1,6 @@
-name: bosh-bug-replication
+---
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /tmp/bosh-2177-blobs
+final_name: bosh-bug-replication

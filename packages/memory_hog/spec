@@ -2,7 +2,7 @@
 name: memory_hog
 
 dependencies:
-- golang1.12.5
+- golang-1.12-linux
 
 files:
 - memory_hog/**

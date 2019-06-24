@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir -p src
+cp -r src/memory_hog src
+
+git rev-parse HEAD > sha
+cat sha
+
+bosh create-release --force
+
+#cleanup
+rm -f sha
