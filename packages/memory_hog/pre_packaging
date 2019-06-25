@@ -1,0 +1,4 @@
+set -ex
+
+# move dependencies to BUILD_DIR
+cp $RELEASE_DIR/sha $BUILD_DIR

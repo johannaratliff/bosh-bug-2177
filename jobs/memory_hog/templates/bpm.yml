@@ -1,4 +1,4 @@
 ---
 processes:
 - name: memory_hog
-  executable: /var/vcap/packages/memory_hog
+  executable: /var/vcap/packages/memory_hog/memory_hog

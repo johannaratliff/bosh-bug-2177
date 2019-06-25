@@ -1,7 +1,4 @@
-#!/bin/bash
-
-mkdir -p src
-cp -r src/memory_hog src
+set -eu
 
 git rev-parse HEAD > sha
 cat sha

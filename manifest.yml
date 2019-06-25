@@ -8,6 +8,8 @@ stemcells:
 releases:
 - name: bosh-bug-replication
   version: latest
+- name: bpm
+  version: latest
 
 instance_groups:
 - name: memory_hog
@@ -23,6 +25,8 @@ instance_groups:
   jobs:
   - name: memory_hog
     release: bosh-bug-replication
+  - name: bpm
+    release: bpm
 
 update:
   canaries: 2

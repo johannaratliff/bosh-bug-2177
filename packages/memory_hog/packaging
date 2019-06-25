@@ -1,8 +1,7 @@
 #!/bin/bash -eu
 
 source /var/vcap/packages/golang-1.12-linux/bosh/compile.env
-export GOPATH=$BOSH_INSTALL_TARGET
 
 go build \
   -ldflags "-X main.SHA=$(cat sha)" \
-  -o ${BOSH_INSTALL_TARGET}/memory_hog ./src/memory_hog
+  -o ${BOSH_INSTALL_TARGET}/memory_hog ../memory_hog/memory_hog
